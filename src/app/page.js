@@ -1,95 +1,51 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "@fontsource/dm-serif-display"; // Defaults to weight 400
+import "@fontsource/dm-serif-display/400-italic.css"; // Specify weight and style
+import "@fontsource/dm-serif-display/400.css"; // Specify weight
+import Head from 'next/head';
+import MainSection from '../components/mainSection/MainSection';
+
+const organizationSchema =  {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Home Instead",
+  "description": "Home Instead, a trusted source of in home elderly care services.",
+  "telephone": "(402) 498-4466",
+  "logo": "https://www.homeinstead.com/Static/img/logo/hi_logo_vertical_woTagline.png",
+  "url": "https://www.homeinstead.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "13323 California Street Suite 101",
+    "addressLocality": "Omaha",
+    "addressRegion": "NE",
+    "postalCode": "68154"
+  }
+}
+
+const serviceSchema = 
+    {
+    "@context": "https://schema.org/",
+    "@type": "Service",
+    "serviceType": "In Home Care"
+    }
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div>
+      <Head>
+        <title>Home Instead Clone</title>
+        <meta name="description" content="Home care services for seniors." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+      <MainSection className="page-wrapper"/>
     </div>
   );
 }

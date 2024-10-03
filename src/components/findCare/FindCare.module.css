@@ -1,0 +1,104 @@
+.hisc-duo-search-box .location-search-button,
+.hisc-duo-search-box .career-search-button {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #E0D1DA;
+    color: #60184F;
+    width: 6.4rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.55rem 0.4rem;
+    height: 2.4rem;
+    margin-bottom: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.hisc-duo-search-box .location-search-button.active,
+.hisc-duo-search-box .career-search-button.active {
+    background-color: transparent !important;
+    border-bottom: 4px solid var(--purple) !important;
+    color: var(--purple) !important;
+    box-shadow: none !important;
+    font-weight: 600;
+}
+
+.hisc-duo-search-box .location-search-button:focus,
+.hisc-duo-search-box .career-search-button:focus {
+    background-color: transparent !important;
+    border-bottom: 4px solid var(--purple) !important;
+    color: var(--purple) !important;
+    box-shadow: none !important;
+    font-weight: 600;
+    outline: 1px solid var(--purple);
+}
+
+.hisc-duo-search-box .location-search-button:hover,
+.hisc-duo-search-box .career-search-button:hover {
+    background-color: transparent !important;
+    border-bottom: 4px solid var(--purple) !important;
+    color: var(--purple) !important;
+    box-shadow: none !important;
+    font-weight: 600;
+}
+
+.hisc-duo-search-box.location-search .form-box input[type=text] {
+    width: 100%;
+    height: 3.3rem;
+    border: 1px solid #E6E5E4;
+}
+
+.hisc-duo-search-box.location-search .form-box input[type=text]+label {
+    top: 1.15rem;
+}
+
+@media (max-width: 360px) {
+    .hisc-duo-search-box.location-search .form-box input[type=text] + label {
+        max-width: 80%;
+    }
+}
+
+.hisc-duo-search-box.location-search .form-box .btn.duo-search-button {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+@media (min-width: 564px) {
+    .hisc-duo-search-box.location-search .form-box input[type=text] {
+        width: 11.5rem;
+    }
+
+    .hisc-duo-search-box.location-search .form-box .btn.duo-search-button {
+        width: 9.6rem;
+        margin-top: 0;
+        margin-left: 0.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .hisc-duo-search-box.location-search .form-box .btn.duo-search-button {
+        width: 9.6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hisc-duo-search-box.location-search .form-box input[type=text] {
+        width: 14rem;
+    }
+}
+
+.hisc-duo-search-box .use-location {
+    font-size: 0.8rem;
+    margin-top: -1.05rem;
+    z-index: 10;
+}
+
+.hisc-duo-search-box .use-location:before {
+    display: none;
+}
+
+.hisc-duo-search-box .use-location #target-svg {
+    fill: var(--purple);
+}
+.home-hero .score-hero {
+    margin-top: 0px !important;
+ }

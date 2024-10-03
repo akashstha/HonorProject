@@ -1,0 +1,12 @@
+.mainSection {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .mainSection div {
+    margin-bottom: 30px;
+  }
+  .mainSectionP{
+    max-width: 37rem; 
+    font-size: 1.2rem;
+  }

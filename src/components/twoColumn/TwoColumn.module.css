@@ -1,0 +1,59 @@
+.med-reminders {
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 8px;
+}
+
+.med-reminders::before {
+content: url(data:image/svg+xml,%3Csvg%20width%3D%2228%22%20height%3D%2229%22%20viewBox%3D%220%200%2028%2029%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M17.5484%2012.9002L21.7531%207.05131C22.4624%206.06509%2022.2384%204.68998%2021.2522%203.98064C20.2659%203.27131%2018.8908%203.49531%2018.1815%204.48153L12.1133%2012.9002%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M4.2793%2012.9002V13.2891C4.2793%2017.0722%206.44463%2020.3435%209.60085%2021.9504L9.18863%2023.6009C9.06574%2024.0924%209.43752%2024.5669%209.94308%2024.5669H18.0615C18.5671%2024.5669%2018.9389%2024.0909%2018.816%2023.6009L18.4037%2021.9504C21.5584%2020.3435%2023.7253%2017.0722%2023.7253%2013.2891V12.9002H4.2793Z%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E) !important;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -4px;
+    left: -40px;
+}
+
+.transit {
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 8px;
+}
+
+.transit::before {
+content: url(data:image/svg+xml,%3Csvg%20width%3D%2228%22%20height%3D%2229%22%20viewBox%3D%220%200%2028%2029%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M22.1651%208.23438H5.83181C4.1136%208.23438%202.7207%209.62727%202.7207%2011.3455V21.4566C2.7207%2023.1748%204.1136%2024.5677%205.83181%2024.5677H22.1651C23.8834%2024.5677%2025.2763%2023.1748%2025.2763%2021.4566V11.3455C25.2763%209.62727%2023.8834%208.23438%2022.1651%208.23438Z%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M9.7207%208.23351V4.34462C9.7207%203.48595%2010.4176%202.78906%2011.2763%202.78906H16.7207C17.5794%202.78906%2018.2763%203.48595%2018.2763%204.34462V8.23351%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M14%2019.8984V12.8984%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M17.5%2016.3984H10.5%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E) !important;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -4px;
+    left: -40px;
+}
+
+.transpo {
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 8px;
+}
+
+.transpo::before {
+content: url(data:image/svg+xml,%3Csvg%20width%3D%2228%22%20height%3D%2229%22%20viewBox%3D%220%200%2028%2029%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4.59375%2025.7331C6.61286%2022.6873%2010.0724%2020.6776%2014.0002%2020.6776C17.928%2020.6776%2021.3875%2022.6858%2023.4066%2025.7331%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M15.166%2026.123H18.666%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M19.8327%209.78867C15.9438%207.71512%2012.0549%207.71512%208.16602%209.78867V4.34423C12.0549%202.27067%2015.9438%202.27067%2019.8327%204.34423V9.78867Z%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M19.8327%209.78906V10.9557C19.8327%2014.1773%2017.2209%2016.7891%2013.9993%2016.7891C10.7778%2016.7891%208.16602%2014.1773%208.16602%2010.9557V9.78906%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E) !important;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -4px;
+    left: -40px;
+}
+
+.healthy-diet-and-nutrition {
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 8px;
+}
+
+.healthy-diet-and-nutrition::before {
+content: url(data:image/svg+xml,%3Csvg%20width%3D%2228%22%20height%3D%2229%22%20viewBox%3D%220%200%2028%2029%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M21.7224%209.25325C19.2413%207.28236%2016.4475%208.90636%2014.0862%208.90636C11.7248%208.90636%209.21572%207.18436%206.44994%209.25325C3.68416%2011.3221%203.41661%2016.5441%206.48883%2021.3881C9.43661%2026.0377%2012.4077%2024.2146%2014.0893%2024.2146C15.7708%2024.2146%2018.7435%2026.0408%2021.6897%2021.3881C24.7588%2016.5441%2024.0059%2011.0608%2021.7224%209.25325Z%22%20stroke%3D%22%23DB4330%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20d%3D%22M17.8889%201.23438C18.3182%201.23438%2018.6667%201.58282%2018.6667%202.01215C18.6667%204.15882%2016.9244%205.90104%2014.7778%205.90104C14.3484%205.90104%2014%205.5526%2014%205.12326C14%202.9766%2015.7422%201.23438%2017.8889%201.23438Z%22%20fill%3D%22%23DB4330%22%2F%3E%3C%2Fsvg%3E) !important;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -4px;
+    left: -40px;
+}
