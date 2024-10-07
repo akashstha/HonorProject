@@ -1,3 +1,4 @@
+import { getResponse } from "../../../libs/mockCms";
 import ComfortBlock from '../comfortBlock/ComfortBlock';
 import FindCare from '../findCare/findCare';
 import LeftImage from '../leftImage/LeftImage';
@@ -6,19 +7,16 @@ import ServiceCard from '../serviceCard /ServiceCard';
 import TwoColumn from '../twoColumn/TwoColumn';
 import styles from './MainSection.module.css';
 
-const MainSection = () => {
-  const ComfortBlockContent = [{
-    heading : "Comfort. Security. Connection.",
-    paragraph : "We all need these as we age, and that's where Home Instead can help. Our high-quality, trained Care Professionals offer the guidance and support you deserve, all in the comfort of home."
-  },{
-    heading : "Experience meets innovation",
-    paragraph : "With over two decades of experience caring for seniors, Home Instead is the world’s largest home care network, serving about 100,000 families in nearly 1,200 locations."
-  }]
+const MainSection = async() => {
+
+  const getData = await getResponse();
+ 
+  const comfortBlockContent = getData?.components?.ComfortBlock
   return (
     <section className={`page-wrapper`}>
       {/* <Nav /> */}
       <FindCare/>
-        <ComfortBlock content = {ComfortBlockContent[0]}/>
+        <ComfortBlock content = {comfortBlockContent[0]}/>
       <div className={styles.sectionContainer}>
         <ServiceCard
           title="Personalized Home Care"
@@ -38,9 +36,9 @@ const MainSection = () => {
           link="/memory-care"
         />
       </div>
-      <TwoColumn />
+      <TwoColumn comfortBlockContent/>
       <LeftImage/>
-      <ComfortBlock content = {ComfortBlockContent[1]}/>
+      <ComfortBlock content = {comfortBlockContent[1]}/>
       <ProfessionalButton/>
       <svg viewBox="0 0 968 1450" fill="none" xmlns="http://www.w3.org/2000/svg" class="stone-svg right blue">
         <g clip-path="url(#mid_stone_clip)">

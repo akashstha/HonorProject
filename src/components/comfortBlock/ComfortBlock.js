@@ -1,6 +1,6 @@
 
+// "use client";
 const ComfortBlock = (props) => {
-  const content = props.content;
   return (
     <section className="score-stripe page-layout-stripe">
     <div className="container pageLayout">
@@ -8,8 +8,8 @@ const ComfortBlock = (props) => {
             <div className="score-center">
                 
 
-<h2 className="text-center text-purple">{content.heading}</h2>
-<p className="text-center mx-auto max-width: 37rem;font-size: 1.2rem;">{content.paragraph}</p>
+<h2 className="text-center text-purple">{props?.content?.heading}</h2>
+<p className="text-center mx-auto max-width: 37rem;font-size: 1.2rem;">{props?.content?.paragraph}</p>
             </div>
         </div>
     </div>
