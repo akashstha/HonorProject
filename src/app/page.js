@@ -34,6 +34,7 @@ export default function Home() {
       <Head>
         <title>Home Instead Clone</title>
         <meta name="description" content="Home care services for seniors." />
+        <link rel="canonical" href="Home care services for seniors." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
