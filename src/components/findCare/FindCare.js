@@ -1,7 +1,7 @@
 import Image from "next/image";
 const FindCare = () => {
   return (
-    <section className="score-stripe    home-hero">
+    <section className="">
       <div className="container pageLayout">
         <div className="score-column2 equal">
           <div className="score-left">
